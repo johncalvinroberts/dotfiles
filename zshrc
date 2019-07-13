@@ -6,16 +6,13 @@ ZSH_THEME="johnny"
 # Add ruby version on prompt (float right)
 RPS1='[$(nvm current)]$EPS1'
 
-# Useful plugins for Rails development with Sublime Text
-plugins=(gitfast brew rbenv last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
+plugins=(gitfast brew rbenv last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search zsh-autosuggestions)
 
 # Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
 
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
-# zsh auto suggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Rails and Ruby uses the local `bin` folder to store binstubs.
 # So instead of running `bin/rails` like the doc says, just run `rails`

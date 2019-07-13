@@ -1,3 +1,4 @@
+set -ex
 echo "Type in your first and last name (no accent or special characters - e.g. 'ç'): "
 read full_name
 
@@ -8,6 +9,7 @@ git config --global user.email $email
 git config --global user.name $full_name
 
 curl https://raw.githubusercontent.com/johncalvinroberts/zeit.zsh-theme/master/johnny.zsh-theme -Lo ~/.oh-my-zsh/custom/themes/johnny.zsh-theme
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 backup() {
   target=$1
@@ -49,14 +51,8 @@ fi
 cd "$CURRENT_DIR"
 
 setopt nocasematch
-if [[ ! `uname` =~ "darwin" ]]; then
-  git config --global core.editor "subl -n -w $@ >/dev/null 2>&1"
-  echo 'export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"' >> zshrc
-else
-  git config --global core.editor "vim"
-  bundler_editor="vim"
-  echo "export BUNDLER_EDITOR=\"${bundler_editor}\"" >> zshrc
-fi
+git config --global core.editor "vim"
+bundler_editor="vim"
 
 
 
