@@ -1,0 +1,71 @@
+{
+  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.openEditors.visible": 0,
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  "[reason]": {
+    "editor.formatOnSave": true
+  },
+  "eslint.autoFixOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "files.associations": {
+    "*.wxml": "html",
+    "*.wxss": "css",
+    "*.cjson": "jsonc",
+    "*.wxs": "javascript"
+  },
+  "prettier.singleQuote": true,
+  "editor.fontFamily": "Dank Mono, Menlo",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "materialTheme.autoApplyIcons": false,
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#64FFDA",
+    "list.activeSelectionForeground": "#64FFDA",
+    "list.inactiveSelectionForeground": "#64FFDA",
+    "list.highlightForeground": "#64FFDA",
+    "scrollbarSlider.activeBackground": "#64FFDA50",
+    "editorSuggestWidget.highlightForeground": "#64FFDA",
+    "textLink.foreground": "#64FFDA",
+    "progressBar.background": "#64FFDA",
+    "pickerGroup.foreground": "#64FFDA",
+    "tab.activeBorder": "#64FFDA",
+    "notificationLink.foreground": "#64FFDA",
+    "editorWidget.resizeBorder": "#64FFDA",
+    "editorWidget.border": "#64FFDA",
+    "settings.modifiedItemIndicator": "#64FFDA",
+    "settings.modifiedItemForeground": "#64FFDA",
+    "settings.headerForeground": "#64FFDA",
+    "panelTitle.activeBorder": "#64FFDA",
+    "breadcrumb.activeSelectionForeground": "#64FFDA",
+    "menu.selectionForeground": "#64FFDA",
+    "menubar.selectionForeground": "#64FFDA"
+  },
+  "materialTheme.accent": "Bright Teal",
+  "emmet.includeLanguages": {
+    "wxml": "html",
+    "javascript": "javascriptreact"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "window.zoomLevel": 0,
+  "material-icon-theme.activeIconPack": "angular_ngrx",
+  "explorer.confirmDragAndDrop": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 200,
+  "editor.minimap.showSlider": "always",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.statusBar.feedback.visible": false,
+  "editor.cursorBlinking": "solid",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "swaggerViewer.previewInBrowser": true
+}
