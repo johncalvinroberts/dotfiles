@@ -50,3 +50,8 @@
 [user]
 	email = john.calvin.roberts@gmail.com
 	name = John Roberts
+	signingkey = INSERT_KEY_HERE
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true
