@@ -1,18 +1,22 @@
 {
-  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.colorTheme": "Community Material Theme Darker",
   "workbench.iconTheme": "material-icon-theme",
   "explorer.openEditors.visible": 0,
   "editor.formatOnSave": false,
+  "editor.semanticHighlighting.enabled": false,
   "[javascript]": {
     "editor.formatOnSave": true
   },
   "[html]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[reason]": {
     "editor.formatOnSave": true
   },
-  "eslint.autoFixOnSave": true,
+  "[svelte]": {
+    "editor.formatOnSave": true
+  },
   "javascript.updateImportsOnFileMove.enabled": "never",
   "files.associations": {
     "*.wxml": "html",
@@ -20,7 +24,6 @@
     "*.cjson": "jsonc",
     "*.wxs": "javascript"
   },
-  "prettier.singleQuote": true,
   "editor.fontFamily": "Dank Mono, Menlo",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
@@ -47,7 +50,7 @@
     "menu.selectionForeground": "#64FFDA",
     "menubar.selectionForeground": "#64FFDA"
   },
-  "materialTheme.accent": "Bright Teal",
+  "materialTheme.accent": "Acid Lime",
   "emmet.includeLanguages": {
     "wxml": "html",
     "javascript": "javascriptreact"
@@ -67,5 +70,23 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "swaggerViewer.previewInBrowser": true
+  "swaggerViewer.previewInBrowser": true,
+  "breadcrumbs.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "oneDarkPro.bold": true,
+  "oneDarkPro.editorTheme": "Onedark Pro",
+  "workbench.preferredDarkColorTheme": "Legacy - Material Theme",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "svelte"
+  ],
+  "eslint.alwaysShowStatus": true
 }
