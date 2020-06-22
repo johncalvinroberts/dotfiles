@@ -8,3 +8,5 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 alias vs='code .'
 alias ngrok='/Users/john/code/ngrok'
 
+alias cyp='./node_modules/.bin/cypress'
+

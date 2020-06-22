@@ -1,0 +1,10 @@
+{
+	"ignored_packages":
+	[
+		"BracketHighlighter",
+		"ERB Snippets",
+		"Git",
+		"JSX",
+		"Vintage"
+	]
+}

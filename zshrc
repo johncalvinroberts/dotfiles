@@ -1,5 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
+ZSH_DISABLE_COMPFIX=true
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="johnny"
@@ -46,3 +47,4 @@ export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
