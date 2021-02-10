@@ -92,6 +92,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 cp -fr "./vscode-settings.json" "$HOME/Library/Application\ Support/Code/User/settings.json"
 
+cp -fr "./alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
 
 # The following stolen from https://github.com/mathiasbynens/dotfiles/blob/master/.macos and kun
 echo "Some system defaults..."
