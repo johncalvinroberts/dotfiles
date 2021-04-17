@@ -55,42 +55,9 @@ git config --global core.editor "vim"
 bundler_editor="vim"
 
 
-
-
-echo "VS code config"
-
-code --install-extension akamud.vscode-theme-onedark
-code --install-extension Arjun.swagger-viewer
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension debian001.app-migrator
-code --install-extension drKnoxy.eslint-disable-snippets
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension EditorConfig.EditorConfig
-code --install-extension Equinusocio.vsc-material-theme
-code --install-extension esbenp.prettier-vscode
-code --install-extension file-icons.file-icons
-code --install-extension freebroccolo.reasonml
-code --install-extension hsnazar.hyper-term-theme
-code --install-extension jaredly.reason-vscode
-code --install-extension kumar-harsh.graphql-for-vscode
-code --install-extension LaurentTreguier.vscode-simple-icons
-code --install-extension monokai.theme-monokai-pro-vscode
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-vscode-remote.remote-containers
-code --install-extension ms-vscode.sublime-keybindings
-code --install-extension octref.vetur
-code --install-extension PKief.material-icon-theme
-code --install-extension Prisma.vscode-graphql
-code --install-extension qiu8310.minapp-vscode
-code --install-extension redhat.vscode-yaml
-code --install-extension silvenon.mdx
-code --install-extension wix.vscode-import-cost
-code --install-extension zhuangtongfa.Material-theme
-
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
-cp -fr "./vscode-settings.json" "$HOME/Library/Application\ Support/Code/User/settings.json"
 
 cp -fr "./alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
 
