@@ -56,10 +56,14 @@ bundler_editor="vim"
 
 
 echo "Installing nvm..."
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 
 cp -fr "./alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
+
+echo "copying xbars"
+ME=$(whoami)
+cp -r ./xbar "/Users/$ME/Library/Application Support/xbar/plugins"
 
 # The following stolen from https://github.com/mathiasbynens/dotfiles/blob/master/.macos and kun
 echo "Some system defaults..."
@@ -72,7 +76,7 @@ defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 # Finder: show hidden files by default
-#defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
