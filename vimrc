@@ -15,12 +15,3 @@ if has("multi_byte")
 else
   echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
 endif
-
-call plug#begin()
-Plug 'xavierchow/vim-swagger-preview'
-Plug 'tpope/vim-fugitive'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'sheerun/vim-polyglot'
-Plug 'Elethom/midnight.vim'
-call plug#end()

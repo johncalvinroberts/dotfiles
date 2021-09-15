@@ -59,10 +59,12 @@ echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 
+mkdir -p "$HOME/.config/alacritty"
 cp -fr "./alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
 
 echo "copying xbars"
 ME=$(whoami)
+mkdir -p "/Users/$ME/Library/Application Support/xbar/plugins"
 cp -r ./xbar "/Users/$ME/Library/Application Support/xbar/plugins"
 
 # The following stolen from https://github.com/mathiasbynens/dotfiles/blob/master/.macos and kun
