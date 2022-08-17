@@ -48,10 +48,10 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = john.calvin.roberts@gmail.com
+	email = john.roberts@uplight.com
 	name = John Roberts
 	signingkey = INSERT_KEY_HERE
 [gpg]
-	program = gpg2
+	program = gpg
 [commit]
 	gpgsign = true

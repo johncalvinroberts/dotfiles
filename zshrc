@@ -56,8 +56,9 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit
 compinit -u
-. /usr/local/etc/profile.d/z.sh
+
 
  # JAVA?!
 PATH="/usr/local/opt/openjdk/bin:$PATH" 
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+. /usr/local/etc/profile.d/z.sh
