@@ -47,11 +47,25 @@
 
 [branch "master"]
   mergeoptions = --no-edit
+
 [user]
-	email = john.roberts@uplight.com
+	email = john.calvin.roberts@gmail.com
 	name = John Roberts
-	signingkey = INSERT_KEY_HERE
-[gpg]
-	program = gpg
-[commit]
-	gpgsign = true
+	signingkey = INSERT_KEY_HERE                                                            │
+[gpg]                                                                                          │
+	program = gpg                                                                           │
+[commit]                                                                                       │
+ gpgsign = true
+
+[includeIf "gitdir:~/code/italic/"]
+	path = /Users/johnroberts/.gitconfig-italic
+
+[includeIf "gitdir:~/code/uplight/"]
+	path = /Users/johnroberts/.gitconfig-uplight
+
+[difftool]
+    prompt = true
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
