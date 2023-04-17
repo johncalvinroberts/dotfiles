@@ -19,6 +19,7 @@ alias cy='./node_modules/.bin/cypress'
 alias g='git'
 alias gst='git status'
 alias glg='git lg'
+alias gco='git checkout'
 alias whatismyip='curl ifconfig.me'
 alias ktl="kubectl"
 alias k="kubectl"
