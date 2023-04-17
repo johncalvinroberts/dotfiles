@@ -66,10 +66,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 mkdir -p "$HOME/.config/alacritty"
 cp -fr "./alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
 
-echo "copying xbars"
-ME=$(whoami)
-mkdir -p "/Users/$ME/Library/Application Support/xbar/plugins"
-cp -r ./xbar "/Users/$ME/Library/Application Support/xbar/plugins"
+mkdir -p "$HOME/.config/zed"
+cp -fr "./zed/keymap.json" "$HOME/.config/zed/keymap.json"
+cp -fr "./zed/settings.json" "$HOME/.config/zed/settings.json"
+
 
 # The following stolen from https://github.com/mathiasbynens/dotfiles/blob/master/.macos and kun
 echo "Some system defaults..."
