@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = vim
+  editor = vim
 
 [alias]
   co = checkout
@@ -37,31 +37,36 @@
 
   # Removes a file from the index
   unstage = reset HEAD --
-	graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [help]
   autocorrect = 1
 
 [push]
-	default = simple
+  default = simple
 
 [branch "master"]
   mergeoptions = --no-edit
 
 [user]
-	email = john.calvin.roberts@gmail.com
-	name = John Roberts
-	signingkey = INSERT_KEY_HERE
+  email = john.calvin.roberts@gmail.com
+  name = John Roberts
+  signingkey = INSERT_KEY_HERE
+
 [gpg]
-	program = gpg
+  program = gpg
 [commit]
  gpgsign = true
 
 [includeIf "gitdir:~/code/italic/"]
-	path = /Users/johnroberts/.gitconfig-italic
+  path = /Users/johnroberts/.gitconfig-italic
 
 [includeIf "gitdir:~/code/uplight/"]
-	path = /Users/johnroberts/.gitconfig-uplight
+  path = /Users/johnroberts/.gitconfig-uplight
+
+[includeIf "gitdir:~/code/alpaca/"]
+  path = /Users/johnroberts/.gitconfig-alpaca
+
 
 [difftool]
     prompt = true
@@ -69,3 +74,4 @@
     tool = nvimdiff
 [difftool "nvimdiff"]
     cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
