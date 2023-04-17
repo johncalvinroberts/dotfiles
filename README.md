@@ -54,3 +54,7 @@ Replace this line with gpg signingkey in `gitconfig`
 
 **Lastly, run `zsh install.sh`**
 
+### Other things to install
+
+* [rectangle](https://rectangleapp.com/)
+* [insomnia http client](https://insomnia.rest/)
