@@ -22,3 +22,4 @@ alias glg='git lg'
 alias whatismyip='curl ifconfig.me'
 alias ktl="kubectl"
 alias k="kubectl"
+alias P=""

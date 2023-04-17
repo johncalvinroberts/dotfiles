@@ -1,4 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
+source  ~/.bash_profile
 
 ZSH_DISABLE_COMPFIX=true
 # You can change the theme with another one:
@@ -63,4 +64,4 @@ compinit -u
  # JAVA?!
 PATH="/usr/local/opt/openjdk/bin:$PATH" 
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-. /usr/local/etc/profile.d/z.sh
+. /opt/homebrew/etc/profile.d/z.sh

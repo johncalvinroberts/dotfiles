@@ -66,9 +66,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 mkdir -p "$HOME/.config/alacritty"
 cp -fr "./alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
 
-mkdir -p "$HOME/.config/zed"
-cp -fr "./zed/keymap.json" "$HOME/.config/zed/keymap.json"
-cp -fr "./zed/settings.json" "$HOME/.config/zed/settings.json"
+mkdir -p "$HOME/.config/.zed"
+cp -fr "./zed/keymap.json" "$HOME/.config/.zed/keymap.json"
+cp -fr "./zed/settings.json" "$HOME/.config/.zed/settings.json"
 
 
 # The following stolen from https://github.com/mathiasbynens/dotfiles/blob/master/.macos and kun
