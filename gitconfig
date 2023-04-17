@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = vim
+  editor = vim
 
 [alias]
   co = checkout
@@ -51,10 +51,10 @@
 [user]
 	email = john.calvin.roberts@gmail.com
 	name = John Roberts
-	signingkey = INSERT_KEY_HERE                                                            │
-[gpg]                                                                                          │
-	program = gpg                                                                           │
-[commit]                                                                                       │
+	signingkey = INSERT_KEY_HERE
+[gpg]
+	program = gpg
+[commit]
  gpgsign = true
 
 [includeIf "gitdir:~/code/italic/"]
