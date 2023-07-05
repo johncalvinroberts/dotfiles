@@ -76,8 +76,8 @@ echo "Some system defaults..."
 # Disable the over-the-top focus ring animation
 defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
 # make key repeast fast af
-defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
