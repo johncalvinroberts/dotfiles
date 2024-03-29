@@ -7,6 +7,7 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 alias vs='code .'
 alias zd='zed .'
+alias cs="cursor ."
 alias ngrok='/Users/john/code/tools/ngrok'
 
 alias cyp='./node_modules/.bin/cypress'
@@ -24,3 +25,4 @@ alias whatismyip='curl ifconfig.me'
 alias ktl="kubectl"
 alias k="kubectl"
 alias P=""
+alias ngrok='/opt/homebrew/bin/ngrok'

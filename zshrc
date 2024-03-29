@@ -65,3 +65,17 @@ compinit -u
 PATH="/usr/local/opt/openjdk/bin:$PATH" 
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 . /opt/homebrew/etc/profile.d/z.sh
+
+
+
+# bun completions
+[ -s "/Users/johnroberts/.bun/_bun" ] && source "/Users/johnroberts/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
