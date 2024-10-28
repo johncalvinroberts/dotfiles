@@ -61,7 +61,10 @@ compinit -u
 #  # JAVA?!
 # PATH="/usr/local/opt/openjdk/bin:$PATH"
 # export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-# . /opt/homebrew/etc/profile.d/z.sh
+
+# z, jump around frecent folders instead of cd
+# https://github.com/rupa/z
+. /opt/homebrew/etc/profile.d/z.sh
 
 
 
