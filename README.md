@@ -35,6 +35,12 @@ After doing that, authenticate zed with GitHub.
 
 **Update xcode tools**
 ```
+sudo softwareupdate --install -a
+```
+
+If that doesn't apply any changes, try:
+```
+sudo rm -rf /Library/Developer/CommandLineTools
 xcode-select --install
 ```
 
