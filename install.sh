@@ -74,7 +74,7 @@ echo "Setting some system defaults..."
 defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
 # make key repeast fast af
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
-defaults write KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+defaults write NSGlobalDomain KeyRepeat -int 1
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
@@ -94,6 +94,9 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 1
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 1
 defaults write com.apple.universalaccess mouseDriverCursorSize -float 1.5
+
+killall SystemUIServer
+
 
 while IFS= read -r line || [ -n "$line" ]; do
   if [ -n "$line" ]; then
