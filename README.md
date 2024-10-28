@@ -5,7 +5,7 @@ A good starting point is to create a new SSH key for the new computer.
 ```
 ssh-keygen -t ed25519 -C "john.calvin.roberts@gmail.com"
 cat ~/.ssh/id_ed25519.pub | pbcopy
-ssh-add --apple-use-keychain ~/.ssh/id_ed25519 
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
 
 Add that to GitHub, clone this repo, and start installing stuff.
@@ -32,11 +32,6 @@ brew install --cask zed
 
 After doing that, authenticate zed with GitHub.
 
-**install alacritty and tmux**
-```
-brew instal alacritty --cask
-brew install tmux
-```
 
 **Update xcode tools**
 ```
@@ -82,4 +77,3 @@ Can all be installed with brew cask:
 * slack
 * notion
 * discord
-
