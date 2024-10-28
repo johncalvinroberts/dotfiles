@@ -11,7 +11,7 @@
 
 [core]
   pager = delta
-  editor = vim
+	editor = vim
 
 [alias]
   co = checkout
@@ -66,6 +66,8 @@
 
 [includeIf "gitdir:~/code/alpaca/"]
   path = /Users/johnroberts/.gitconfig-alpaca
+[includeIf "gitdir:~/code/alpaca/"]
+  path = /Users/johnroberts/.gitconfig-captions
 
 
 [difftool]
