@@ -96,5 +96,6 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Set padding for toolbar items to 1, so stuff doesn't go under the notch
 defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 1
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 1
+defaults write com.apple.universalaccess mouseDriverCursorSize -float 1.5
 
 zsh ~/.zshrc

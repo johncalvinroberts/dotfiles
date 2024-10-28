@@ -10,7 +10,7 @@
   remote = yellow
 
 [core]
-  pager = less -FRSX
+  pager = delta
   editor = vim
 
 [alias]
@@ -51,12 +51,12 @@
 [user]
   email = john.calvin.roberts@gmail.com
   name = John Roberts
-  signingkey = INSERT_KEY_HERE
-
+  signingkey = PUT_SIGNING_KEY_HERE
 [gpg]
   program = gpg
 [commit]
- gpgsign = true
+ #gpgsign = true
+ gpgsign = false
 
 [includeIf "gitdir:~/code/italic/"]
   path = /Users/johnroberts/.gitconfig-italic
@@ -75,3 +75,12 @@
 [difftool "nvimdiff"]
     cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[rerere]
+	enabled = true
+[maintenance]
+	repo = /Users/johnroberts/code/alpaca/alpaca
