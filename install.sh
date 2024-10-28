@@ -72,7 +72,7 @@ cp -fr "./zed/settings.json" "$HOME/.config/.zed/settings.json"
 
 
 # The following stolen from https://github.com/mathiasbynens/dotfiles/blob/master/.macos and kun
-echo "Some system defaults..."
+echo "Setting some system defaults..."
 # Disable the over-the-top focus ring animation
 defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
 # make key repeast fast af
@@ -97,5 +97,24 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 1
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 1
 defaults write com.apple.universalaccess mouseDriverCursorSize -float 1.5
+
+while IFS= read -r line || [ -n "$line" ]; do
+  if [ -n "$line" ]; then
+    echo "Installing $line..."
+    brew install "$line"
+  fi
+done < brews
+
+echo "Done installing brews"
+echo "installing casks"
+
+while IFS= read -r line || [ -n "$line" ]; do
+  if [ -n "$line" ]; then
+    echo "Installing $line..."
+    brew install --cask "$line"
+  fi
+done < casks
+
+echo "Done installing casks"
 
 zsh ~/.zshrc
