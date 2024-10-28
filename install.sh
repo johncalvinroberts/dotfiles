@@ -62,9 +62,15 @@ bundler_editor="vim"
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
-
+echo "Copying alacritty config..."
 mkdir -p "$HOME/.config/alacritty"
 cp -fr "./alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
+
+echo "Copying zed config..."
+
+echo "Copying zed config..."
+mkdir -p "$HOME/.config/zed"
+cp -fr ./zed/* "$HOME/.config/zed/"
 
 
 
