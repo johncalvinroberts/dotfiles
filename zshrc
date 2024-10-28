@@ -30,10 +30,6 @@ export GPG_TTY=$(tty)
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 
 # pure prompt
 
@@ -82,5 +78,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # eval "$(pyenv init -)"
 
 
-#export ZELLIJ_INSTALL="$HOME/zellij"
-#export PATH="$ZELLIJ_INSTALL/bin:$PATH"
+export ZELLIJ_INSTALL="$HOME/zellij"
+export PATH="$ZELLIJ_INSTALL/bin:$PATH"
+
+
+# add cargo to path
+. "$HOME/.cargo/env"
+# add homebrew to path
+export PATH="/opt/homebrew/bin:$PATH"

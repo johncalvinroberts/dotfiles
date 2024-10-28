@@ -73,4 +73,8 @@ Also, now would be a good time to add a company-specific Git config, so that you
 
 **Lastly, run `zsh install.sh`**
 
-After doinmg all this, make sure to set up the casks installed, such as `rectangle`, `raycast`, etc.
+After doing all this, make sure to set up the casks installed, such as `rectangle`, `raycast`, etc.
+
+Also, things that manually need to be installed:
+* Cargo + rust + rustup: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+* Zellij: `cargo install --locked zellij`
