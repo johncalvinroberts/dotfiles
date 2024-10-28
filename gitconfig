@@ -49,8 +49,8 @@
   mergeoptions = --no-edit
 
 [user]
-  email = john.calvin.roberts@gmail.com
-  name = John Roberts
+	email = john.calvin.roberts@gmail.com
+	name = John Roberts
   signingkey = PUT_SIGNING_KEY_HERE
 [gpg]
   program = gpg

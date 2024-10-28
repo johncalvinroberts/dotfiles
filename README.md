@@ -73,13 +73,4 @@ Also, now would be a good time to add a company-specific Git config, so that you
 
 **Lastly, run `zsh install.sh`**
 
-### Other things to install
-
-Can all be installed with brew cask:
-
-* [rectangle](https://rectangleapp.com/)
-* [insomnia http client](https://insomnia.rest/)
-* spotify
-* slack
-* notion
-* discord
+After doinmg all this, make sure to set up the casks installed, such as `rectangle`, `raycast`, etc.

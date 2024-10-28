@@ -1,5 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
-source  ~/.bash_profile
+#source  ~/.bash_profile
+source ~/.zprofile
 
 ZSH_DISABLE_COMPFIX=true
 # You can change the theme with another one:
@@ -61,10 +62,10 @@ autoload -Uz compinit
 compinit -u
 
 
- # JAVA?!
-PATH="/usr/local/opt/openjdk/bin:$PATH" 
-export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-. /opt/homebrew/etc/profile.d/z.sh
+#  # JAVA?!
+# PATH="/usr/local/opt/openjdk/bin:$PATH"
+# export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+# . /opt/homebrew/etc/profile.d/z.sh
 
 
 
@@ -75,10 +76,10 @@ export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# # Pyenv
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 
 #export ZELLIJ_INSTALL="$HOME/zellij"

@@ -64,7 +64,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 echo "Copying alacritty config..."
 mkdir -p "$HOME/.config/alacritty"
-cp -fr "./alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
+cp -fr "./alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
 
 echo "Copying zed config..."
 
@@ -99,7 +99,7 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Set padding for toolbar items to 1, so stuff doesn't go under the notch
 defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 1
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 1
-defaults write com.apple.universalaccess mouseDriverCursorSize -float 1.5
+#defaults write com.apple.universalaccess mouseDriverCursorSize -float 1.5
 
 killall SystemUIServer
 
