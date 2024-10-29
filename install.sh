@@ -101,6 +101,10 @@ defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 1
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 1
 #defaults write com.apple.universalaccess mouseDriverCursorSize -float 1.5
 
+# put all screenshots into a folder on the desktop
+mkdir -p "$HOME/Desktop/screenshots"
+defaults write com.apple.screencapture location "$HOME/Desktop/screenshots"
+
 killall SystemUIServer
 
 
